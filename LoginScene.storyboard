@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DMQ-4d-Avr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="5r0-g5-xCD">
+            <objects>
+                <viewController storyboardIdentifier="loginScene" title="Login View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DMQ-4d-Avr" customClass="LoginViewController" customModule="Bubble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UHa-ta-FsV"/>
+                        <viewControllerLayoutGuide type="bottom" id="E5w-RZ-CK3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ycY-N2-LZm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="j2Q-WI-hB0"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="biO-Ob-aWc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8gc-uQ-pJ1"/>
+                                    <constraint firstAttribute="height" constant="60" id="Nqz-Ec-tw7"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgI-SO-I6X" userLabel="facebookButton">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gD-M7-MW8">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="3Pi-0o-rsQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookF" translatesAutoresizingMaskIntoConstraints="NO" id="EL6-dD-ZSX" userLabel="fbLogo">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EL6-dD-ZSX" secondAttribute="height" multiplier="13:7" id="pho-iY-Fbk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.34509803919999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="EL6-dD-ZSX" firstAttribute="top" secondItem="VgI-SO-I6X" secondAttribute="top" constant="2" id="Hmg-ak-5SU"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="EL6-dD-ZSX" secondAttribute="bottomMargin" constant="2" id="Ntm-zt-Qz3"/>
+                                    <constraint firstAttribute="width" constant="250" id="VNF-lY-Foh"/>
+                                    <constraint firstAttribute="height" constant="35" id="gc2-zg-byF"/>
+                                    <constraint firstItem="EL6-dD-ZSX" firstAttribute="leading" secondItem="VgI-SO-I6X" secondAttribute="leading" constant="2" id="vHt-pL-v0t"/>
+                                    <constraint firstAttribute="trailing" secondItem="1gD-M7-MW8" secondAttribute="trailing" constant="30" id="yB1-cR-o6A"/>
+                                    <constraint firstItem="1gD-M7-MW8" firstAttribute="top" secondItem="VgI-SO-I6X" secondAttribute="top" constant="7" id="yN5-VE-3Sg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4Z8-uC-04B" appends="YES" id="CBb-qI-ZgP"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-41-y7g" userLabel="googleButton">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIP-eR-EGv">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="7n0-9Y-IzN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleG" translatesAutoresizingMaskIntoConstraints="NO" id="Pke-cI-06G" userLabel="gLogo"/>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.30588235289999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Pke-cI-06G" firstAttribute="width" secondItem="Wtz-41-y7g" secondAttribute="width" multiplier="0.25" id="3g2-XU-EuB"/>
+                                    <constraint firstAttribute="height" constant="35" id="706-7T-pHf"/>
+                                    <constraint firstAttribute="width" constant="250" id="MAZ-X3-Rt2"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pke-cI-06G" secondAttribute="bottom" id="WOG-ag-UCa"/>
+                                    <constraint firstItem="Pke-cI-06G" firstAttribute="leading" secondItem="Wtz-41-y7g" secondAttribute="leading" id="cgr-Ni-6AK"/>
+                                    <constraint firstItem="iIP-eR-EGv" firstAttribute="top" secondItem="Wtz-41-y7g" secondAttribute="top" constant="7" id="g6O-4V-4DX"/>
+                                    <constraint firstItem="Pke-cI-06G" firstAttribute="top" secondItem="Wtz-41-y7g" secondAttribute="top" id="gpV-hU-vCN"/>
+                                    <constraint firstAttribute="trailing" secondItem="iIP-eR-EGv" secondAttribute="trailing" constant="50" id="riH-9F-EYK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DIF-dl-CCK" appends="YES" id="gOE-H4-ZLZ"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="We do not post anything on your behalf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edZ-aL-v36" userLabel="staticText1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SC0-1o-NBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKE-Ws-3Ht">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up you agree to the " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIt-TR-J3I">
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                        <color key="textColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Terms and Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuz-kJ-aFx">
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                        <color key="textColor" red="0.1215686275" green="0.72941176470000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="e7R-VF-tdV" appends="YES" id="lcV-9s-AQy"/>
+                                        </connections>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="wKL-Ac-46B"/>
+                                </constraints>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-zV-iBA">
+                                <color key="color" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB6-rz-DSe">
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.1215686275" green="0.72941176470000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mQM-gc-kKx" appends="YES" id="vxL-AY-njU"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="edZ-aL-v36" firstAttribute="top" secondItem="Wtz-41-y7g" secondAttribute="bottom" constant="18" id="0tV-4o-zVA"/>
+                            <constraint firstAttribute="trailing" secondItem="j2Q-WI-hB0" secondAttribute="trailing" id="3yA-H6-lzY"/>
+                            <constraint firstItem="1ym-zV-iBA" firstAttribute="centerX" secondItem="ycY-N2-LZm" secondAttribute="centerX" id="7at-Zo-BZu"/>
+                            <constraint firstItem="VgI-SO-I6X" firstAttribute="centerX" secondItem="ycY-N2-LZm" secondAttribute="centerX" id="97q-lK-l5y"/>
+                            <constraint firstItem="Wtz-41-y7g" firstAttribute="top" secondItem="VgI-SO-I6X" secondAttribute="bottom" constant="30" id="BIY-BG-63v"/>
+                            <constraint firstItem="E5w-RZ-CK3" firstAttribute="top" secondItem="j2Q-WI-hB0" secondAttribute="bottom" id="Fdw-vW-R63"/>
+                            <constraint firstItem="1ym-zV-iBA" firstAttribute="centerY" secondItem="ycY-N2-LZm" secondAttribute="centerY" id="Mwh-Tc-ECK"/>
+                            <constraint firstItem="Wtz-41-y7g" firstAttribute="centerX" secondItem="ycY-N2-LZm" secondAttribute="centerX" id="PCZ-fR-Sc5"/>
+                            <constraint firstItem="edZ-aL-v36" firstAttribute="trailing" secondItem="Wtz-41-y7g" secondAttribute="trailing" id="S49-fS-cLM"/>
+                            <constraint firstItem="fKE-Ws-3Ht" firstAttribute="top" secondItem="AB6-rz-DSe" secondAttribute="bottom" constant="8" id="Sen-ZR-7pb"/>
+                            <constraint firstItem="j2Q-WI-hB0" firstAttribute="leading" secondItem="ycY-N2-LZm" secondAttribute="leading" id="U4X-go-PEH"/>
+                            <constraint firstItem="E5w-RZ-CK3" firstAttribute="top" secondItem="edZ-aL-v36" secondAttribute="bottom" constant="61" id="VRU-gU-84l"/>
+                            <constraint firstItem="fKE-Ws-3Ht" firstAttribute="centerX" secondItem="ycY-N2-LZm" secondAttribute="centerX" id="Z6a-Ng-Lhl"/>
+                            <constraint firstItem="AB6-rz-DSe" firstAttribute="top" secondItem="edZ-aL-v36" secondAttribute="bottom" constant="8" id="cxx-rA-e4y"/>
+                            <constraint firstItem="biO-Ob-aWc" firstAttribute="centerX" secondItem="ycY-N2-LZm" secondAttribute="centerX" id="jmW-0n-tua"/>
+                            <constraint firstItem="j2Q-WI-hB0" firstAttribute="top" secondItem="UHa-ta-FsV" secondAttribute="bottom" id="kkR-1G-90B"/>
+                            <constraint firstItem="biO-Ob-aWc" firstAttribute="top" secondItem="UHa-ta-FsV" secondAttribute="bottom" constant="120" id="q4D-df-GgQ"/>
+                            <constraint firstItem="E5w-RZ-CK3" firstAttribute="top" secondItem="Wtz-41-y7g" secondAttribute="bottom" constant="100" id="tyi-Oo-o7x"/>
+                            <constraint firstItem="AB6-rz-DSe" firstAttribute="centerX" secondItem="ycY-N2-LZm" secondAttribute="centerX" id="wuO-JN-GPr"/>
+                            <constraint firstItem="E5w-RZ-CK3" firstAttribute="top" secondItem="fKE-Ws-3Ht" secondAttribute="bottom" id="xdG-Zu-5SF"/>
+                            <constraint firstItem="edZ-aL-v36" firstAttribute="leading" secondItem="Wtz-41-y7g" secondAttribute="leading" id="yqc-2Y-6QR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="1ym-zV-iBA" id="n3S-n5-qjg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfc-F1-JEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4Z8-uC-04B">
+                    <connections>
+                        <action selector="loginToFacebook:" destination="DMQ-4d-Avr" id="Wjz-K2-MO3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DIF-dl-CCK">
+                    <connections>
+                        <action selector="loginToGoogle:" destination="DMQ-4d-Avr" id="9ON-zb-olT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="e7R-VF-tdV">
+                    <connections>
+                        <action selector="TandC:" destination="DMQ-4d-Avr" id="bgW-2v-bSr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mQM-gc-kKx">
+                    <connections>
+                        <action selector="privacyPolicy:" destination="DMQ-4d-Avr" id="3Ob-4O-gpS"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="181.15942028985509" y="312.22826086956525"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="303" height="304"/>
+        <image name="bubbleLogo" width="185" height="185"/>
+        <image name="facebookF" width="125" height="133"/>
+        <image name="googleG" width="150" height="150"/>
+    </resources>
+</document>

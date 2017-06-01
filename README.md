@@ -7,3 +7,5 @@
 # The purpose of this repository is not to replicate the entire Bubble product but to share code components such as Bluetooth communication between Bubble Device and Bubble app. Bubble Uno is built on CC2541 BLE chip manufactured by Texas Instruments and developers who want to build a similar app that communicates with another BLE device can reference this code.
 
 #Sliding menu on iOS was built using PageMenu (excellent!) repository. Link - https://github.com/PageMenu/PageMenu 
+
+#info.plist and GlobalConstants.swift have been excluded purposefully

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rJ5-RE-jS3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome to Bubble-->
+        <scene sceneID="PCh-wU-yUK">
+            <objects>
+                <viewController title="Welcome to Bubble" id="JMv-vQ-dwh" customClass="WelcomeBubbleUnoController" customModule="Bubble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OqO-xM-b6N"/>
+                        <viewControllerLayoutGuide type="bottom" id="5y9-wN-LQQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ben-dE-9cN">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubblebkg" translatesAutoresizingMaskIntoConstraints="NO" id="bMY-RQ-cnN" userLabel="promoImage">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="215.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bMY-RQ-cnN" secondAttribute="height" multiplier="900:506" id="pzU-v4-MIe"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pzU-v4-MIe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="pzU-v4-MIe"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycb-t1-tnB">
+                                <rect key="frame" x="0.0" y="215.5" width="375" height="337.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEJ-vp-Fga">
+                                <rect key="frame" x="-4" y="553" width="383" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9F-NT-ldT" userLabel="Skip">
+                                        <rect key="frame" x="0.0" y="0.0" width="191.5" height="50"/>
+                                        <color key="backgroundColor" red="0.086274509799999996" green="0.27450980390000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="hXl-hh-BX6" appends="YES" id="gvK-9W-pYc"/>
+                                        </connections>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Bubble Uno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhR-mY-Hxn" userLabel="GetUno">
+                                        <rect key="frame" x="191.5" y="0.0" width="191.5" height="50"/>
+                                        <color key="backgroundColor" red="0.086274509799999996" green="0.27450980390000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="OYa-eN-CE5" appends="YES" id="Al9-0d-LC7"/>
+                                        </connections>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RhR-mY-Hxn" secondAttribute="trailing" id="4Hl-k8-UXV"/>
+                                    <constraint firstAttribute="bottom" secondItem="RhR-mY-Hxn" secondAttribute="bottom" id="Iuy-OW-R7c"/>
+                                    <constraint firstAttribute="bottom" secondItem="O9F-NT-ldT" secondAttribute="bottom" id="JPE-Ia-7eV"/>
+                                    <constraint firstAttribute="height" constant="70" id="V4G-B5-e15">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                    <constraint firstItem="O9F-NT-ldT" firstAttribute="top" secondItem="sEJ-vp-Fga" secondAttribute="top" id="WVP-nO-vFu"/>
+                                    <constraint firstItem="RhR-mY-Hxn" firstAttribute="width" secondItem="sEJ-vp-Fga" secondAttribute="width" multiplier="0.5" id="YZB-4L-LIW"/>
+                                    <constraint firstItem="RhR-mY-Hxn" firstAttribute="leading" secondItem="O9F-NT-ldT" secondAttribute="trailing" id="Yc4-SR-9xC"/>
+                                    <constraint firstItem="O9F-NT-ldT" firstAttribute="width" secondItem="sEJ-vp-Fga" secondAttribute="width" multiplier="0.5" id="cjO-IU-AQW"/>
+                                    <constraint firstItem="RhR-mY-Hxn" firstAttribute="top" secondItem="sEJ-vp-Fga" secondAttribute="top" id="fHP-nO-NOU"/>
+                                    <constraint firstItem="RhR-mY-Hxn" firstAttribute="leading" secondItem="O9F-NT-ldT" secondAttribute="trailing" id="rEB-vs-1xe"/>
+                                    <constraint firstItem="O9F-NT-ldT" firstAttribute="leading" secondItem="sEJ-vp-Fga" secondAttribute="leading" id="zh8-he-qhp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="O9F-NT-ldT"/>
+                                        <exclude reference="RhR-mY-Hxn"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="V4G-B5-e15"/>
+                                        <exclude reference="JPE-Ia-7eV"/>
+                                        <exclude reference="WVP-nO-vFu"/>
+                                        <exclude reference="cjO-IU-AQW"/>
+                                        <exclude reference="zh8-he-qhp"/>
+                                        <exclude reference="4Hl-k8-UXV"/>
+                                        <exclude reference="Iuy-OW-R7c"/>
+                                        <exclude reference="YZB-4L-LIW"/>
+                                        <exclude reference="Yc4-SR-9xC"/>
+                                        <exclude reference="fHP-nO-NOU"/>
+                                        <exclude reference="rEB-vs-1xe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="O9F-NT-ldT"/>
+                                        <include reference="RhR-mY-Hxn"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="V4G-B5-e15"/>
+                                        <include reference="JPE-Ia-7eV"/>
+                                        <include reference="WVP-nO-vFu"/>
+                                        <include reference="cjO-IU-AQW"/>
+                                        <include reference="zh8-he-qhp"/>
+                                        <include reference="4Hl-k8-UXV"/>
+                                        <include reference="Iuy-OW-R7c"/>
+                                        <include reference="YZB-4L-LIW"/>
+                                        <include reference="Yc4-SR-9xC"/>
+                                        <include reference="fHP-nO-NOU"/>
+                                        <include reference="rEB-vs-1xe"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCI-8R-aCY" userLabel="introText">
+                                <rect key="frame" x="16" y="255.5" width="343" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="OUr-bz-6co">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <string key="text">While you can continue to use the app for the interactive TV guide, to enable remote functionalities such as changing channels, powering off/on, etc. you will require Bubble Uno</string>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                <color key="textColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OUr-bz-6co"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="OUr-bz-6co"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I already have Bubble Uno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irV-Ja-kqd" userLabel="haveBubble">
+                                <rect key="frame" x="56" y="395.5" width="263" height="45"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.30588235289999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="IW9-Rv-R1I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="15"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IW9-Rv-R1I"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="IW9-Rv-R1I"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tkv-n5-qD8" appends="YES" id="QfZ-gi-mqg"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="irV-Ja-kqd" firstAttribute="top" secondItem="XCI-8R-aCY" secondAttribute="bottom" constant="85" id="0Hw-S2-aoW">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="5y9-wN-LQQ" firstAttribute="top" secondItem="sEJ-vp-Fga" secondAttribute="bottom" id="1Mp-G2-7Iz"/>
+                            <constraint firstItem="XCI-8R-aCY" firstAttribute="top" secondItem="bMY-RQ-cnN" secondAttribute="bottom" constant="89" id="4YB-N6-d25">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="XCI-8R-aCY" firstAttribute="leading" secondItem="ben-dE-9cN" secondAttribute="leadingMargin" id="8Ls-XR-jlG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="irV-Ja-kqd" secondAttribute="trailing" constant="68" id="B9h-7X-rCa">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="bMY-RQ-cnN" firstAttribute="leading" secondItem="ben-dE-9cN" secondAttribute="leadingMargin" constant="-20" id="I38-rb-UC7"/>
+                            <constraint firstItem="ycb-t1-tnB" firstAttribute="top" secondItem="bMY-RQ-cnN" secondAttribute="bottom" id="JFW-6I-DQa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bMY-RQ-cnN" secondAttribute="trailing" constant="-20" id="XEm-Dg-rIL"/>
+                            <constraint firstItem="sEJ-vp-Fga" firstAttribute="top" secondItem="ycb-t1-tnB" secondAttribute="bottom" id="adV-fu-bZi"/>
+                            <constraint firstItem="ycb-t1-tnB" firstAttribute="leading" secondItem="ben-dE-9cN" secondAttribute="leading" id="bnV-wC-sxz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sEJ-vp-Fga" secondAttribute="trailing" constant="-20" id="dT7-sN-Af4"/>
+                            <constraint firstAttribute="trailing" secondItem="ycb-t1-tnB" secondAttribute="trailing" id="dYp-lq-igZ"/>
+                            <constraint firstItem="sEJ-vp-Fga" firstAttribute="leading" secondItem="ben-dE-9cN" secondAttribute="leadingMargin" constant="-20" id="h0D-Ac-kLy"/>
+                            <constraint firstItem="XCI-8R-aCY" firstAttribute="trailing" secondItem="ben-dE-9cN" secondAttribute="trailingMargin" id="naX-Ka-cyk"/>
+                            <constraint firstItem="bMY-RQ-cnN" firstAttribute="top" secondItem="OqO-xM-b6N" secondAttribute="bottom" id="xeI-5X-rXi"/>
+                            <constraint firstItem="irV-Ja-kqd" firstAttribute="leading" secondItem="ben-dE-9cN" secondAttribute="leadingMargin" constant="67" id="z8u-um-xZf">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="sEJ-vp-Fga"/>
+                                <exclude reference="XCI-8R-aCY"/>
+                                <exclude reference="irV-Ja-kqd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="I38-rb-UC7"/>
+                                <exclude reference="XEm-Dg-rIL"/>
+                                <exclude reference="xeI-5X-rXi"/>
+                                <exclude reference="1Mp-G2-7Iz"/>
+                                <exclude reference="4YB-N6-d25"/>
+                                <exclude reference="8Ls-XR-jlG"/>
+                                <exclude reference="naX-Ka-cyk"/>
+                                <exclude reference="0Hw-S2-aoW"/>
+                                <exclude reference="B9h-7X-rCa"/>
+                                <exclude reference="z8u-um-xZf"/>
+                                <exclude reference="dT7-sN-Af4"/>
+                                <exclude reference="h0D-Ac-kLy"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="sEJ-vp-Fga"/>
+                                <include reference="XCI-8R-aCY"/>
+                                <include reference="irV-Ja-kqd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="I38-rb-UC7"/>
+                                <include reference="XEm-Dg-rIL"/>
+                                <include reference="xeI-5X-rXi"/>
+                                <include reference="1Mp-G2-7Iz"/>
+                                <include reference="4YB-N6-d25"/>
+                                <include reference="8Ls-XR-jlG"/>
+                                <include reference="naX-Ka-cyk"/>
+                                <include reference="0Hw-S2-aoW"/>
+                                <include reference="B9h-7X-rCa"/>
+                                <include reference="z8u-um-xZf"/>
+                                <include reference="dT7-sN-Af4"/>
+                                <include reference="h0D-Ac-kLy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="UOZ-0d-AQc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3B5-8d-aVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tkv-n5-qD8">
+                    <connections>
+                        <action selector="configBubbleUno:" destination="JMv-vQ-dwh" id="AYx-4Y-GeO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hXl-hh-BX6">
+                    <connections>
+                        <action selector="skipTapped:" destination="JMv-vQ-dwh" id="H6B-4G-1iu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="OYa-eN-CE5">
+                    <connections>
+                        <action selector="getUnoTapped:" destination="JMv-vQ-dwh" id="tnd-1h-i3A"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1120.8" y="180.35982008995504"/>
+        </scene>
+        <!--Welcome to Bubble-->
+        <scene sceneID="nIm-hf-f6o">
+            <objects>
+                <navigationController storyboardIdentifier="welcomeBubbleUno" title="Welcome to Bubble" automaticallyAdjustsScrollViewInsets="NO" id="rJ5-RE-jS3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="FmE-kN-6yI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                            <color key="textColor" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JMv-vQ-dwh" kind="relationship" relationship="rootViewController" id="44U-sA-19g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnp-hp-cRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="180.35982008995504"/>
+        </scene>
+        <!--Get Bubble Uno-->
+        <scene sceneID="f1q-PB-Uc3">
+            <objects>
+                <viewController storyboardIdentifier="getbubbleuno" title="Get Bubble Uno" id="loS-QE-15f" customClass="GetBubbleUnoWelcomeViewController" customModule="Bubble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fqm-Ke-XV9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qhb-fD-WHH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oUp-O7-ELx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbleStorebg1" translatesAutoresizingMaskIntoConstraints="NO" id="G0B-86-AYF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G0B-86-AYF" secondAttribute="height" multiplier="2465:1975" id="37j-JS-yEN"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1yg-R6-7sc">
+                                <rect key="frame" x="0.0" y="300.5" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzm-6S-lfi">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
+                                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <state key="normal" title="Watch Demo">
+                                            <color key="titleColor" red="0.80392156859999997" green="0.86274509799999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="watchDemo:" destination="loS-QE-15f" eventType="touchUpInside" id="BLN-BS-s1S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joi-yf-yCJ">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="30"/>
+                                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <state key="normal" title="FAQ">
+                                            <color key="titleColor" red="0.80392156859999997" green="0.86274509799999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="faq:" destination="loS-QE-15f" eventType="touchUpInside" id="AGP-mn-rIb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nJO-6W-7v3"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoB-qC-cdO">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.27450980390000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PPl-N6-AAe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                <state key="normal" title="Buy on Amazon">
+                                    <color key="titleColor" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyNow:" destination="loS-QE-15f" eventType="touchUpInside" id="PUG-7T-OKk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bubble Uno" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxP-Ju-bXr">
+                                <rect key="frame" x="16" y="350.5" width="343" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E87-Q1-MTz">
+                                <rect key="frame" x="16" y="385" width="343" height="139"/>
+                                <string key="text">Bubble Uno is a smart device that contains a powerful Infra Red (IR) blaster and connects with your iPhone over Bluetooth Low Energy, letting you fully control your DTH from your mobile. Just place it near your Set Top Box and say goodbye to your remotes</string>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AoB-qC-cdO" secondAttribute="trailing" id="2pS-4v-ZkH"/>
+                            <constraint firstAttribute="trailing" secondItem="1yg-R6-7sc" secondAttribute="trailing" id="Duj-8N-ogp"/>
+                            <constraint firstItem="1yg-R6-7sc" firstAttribute="leading" secondItem="oUp-O7-ELx" secondAttribute="leading" id="EPb-T1-kco"/>
+                            <constraint firstItem="AoB-qC-cdO" firstAttribute="leading" secondItem="oUp-O7-ELx" secondAttribute="leading" id="VEr-Eg-J5F"/>
+                            <constraint firstItem="gxP-Ju-bXr" firstAttribute="leading" secondItem="oUp-O7-ELx" secondAttribute="leadingMargin" id="XLN-ut-rqt"/>
+                            <constraint firstItem="gxP-Ju-bXr" firstAttribute="top" secondItem="1yg-R6-7sc" secondAttribute="bottom" constant="20" id="axm-ha-lvw"/>
+                            <constraint firstItem="Qhb-fD-WHH" firstAttribute="top" secondItem="AoB-qC-cdO" secondAttribute="bottom" id="buD-hp-TKs"/>
+                            <constraint firstItem="E87-Q1-MTz" firstAttribute="trailing" secondItem="oUp-O7-ELx" secondAttribute="trailingMargin" id="cb7-Sk-Asr"/>
+                            <constraint firstItem="E87-Q1-MTz" firstAttribute="top" secondItem="gxP-Ju-bXr" secondAttribute="bottom" constant="10" id="nBc-sY-mI8"/>
+                            <constraint firstItem="G0B-86-AYF" firstAttribute="leading" secondItem="oUp-O7-ELx" secondAttribute="leading" id="oTf-RU-Vcc"/>
+                            <constraint firstItem="1yg-R6-7sc" firstAttribute="top" secondItem="G0B-86-AYF" secondAttribute="bottom" id="ohx-KQ-yZh"/>
+                            <constraint firstItem="gxP-Ju-bXr" firstAttribute="trailing" secondItem="oUp-O7-ELx" secondAttribute="trailingMargin" id="peM-BI-rQL"/>
+                            <constraint firstItem="E87-Q1-MTz" firstAttribute="leading" secondItem="oUp-O7-ELx" secondAttribute="leadingMargin" id="r1m-1d-tbh"/>
+                            <constraint firstItem="G0B-86-AYF" firstAttribute="top" secondItem="oUp-O7-ELx" secondAttribute="top" id="sly-dT-jPa"/>
+                            <constraint firstAttribute="trailing" secondItem="G0B-86-AYF" secondAttribute="trailing" id="xcX-oq-C2K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="price" destination="E87-Q1-MTz" id="d4h-eR-0v3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAF-Dc-cNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3220.289855072464" y="-1354.0760869565217"/>
+        </scene>
+        <!--FAQ-->
+        <scene sceneID="gGN-lT-vlo">
+            <objects>
+                <tableViewController storyboardIdentifier="faqController" title="FAQ" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yfv-sq-N8O" customClass="CollapsibleTableViewController" customModule="Bubble" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zfc-ft-EU5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="D6a-Jy-gDZ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D6a-Jy-gDZ" id="E9k-YE-Jsg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Yfv-sq-N8O" id="Zsk-wO-ZHy"/>
+                            <outlet property="delegate" destination="Yfv-sq-N8O" id="Lfw-7U-ky8"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ud-AM-p7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubbleStorebg1" width="540" height="432"/>
+        <image name="bubblebkg" width="450" height="253"/>
+    </resources>
+</document>

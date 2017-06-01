@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Version Update View Controller-->
+        <scene sceneID="EwP-VA-i6m">
+            <objects>
+                <viewController storyboardIdentifier="versionupdate" id="tms-Ng-ilR" customClass="VersionUpdateViewController" customModule="Bubble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="euS-7t-Nm5"/>
+                        <viewControllerLayoutGuide type="bottom" id="50e-Ms-b1o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5K7-al-rMz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbleLogo_180x180" translatesAutoresizingMaskIntoConstraints="NO" id="nUn-PQ-HkX">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nUn-PQ-HkX" secondAttribute="height" multiplier="1:1" id="fkN-Ba-0CT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Bubble" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb4-k7-QZ4">
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="21"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0E-ne-Qa9">
+                                <string key="text">We are always working to improve your Bubble experience. You are currently using an old version of the app. Use the latest version to get new features, improvements and the most seamless experience with Bubble Uno. We hope you enjoy it!</string>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rgg-dr-k9V">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQv-Iu-4SD">
+                                        <color key="backgroundColor" red="0.086274509799999996" green="0.27450980390000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skipTapped:" destination="tms-Ng-ilR" eventType="touchUpInside" id="0Ng-NJ-wHF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-im-PKy">
+                                        <color key="backgroundColor" red="0.086274509799999996" green="0.27450980390000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <state key="normal" title="Update">
+                                            <color key="titleColor" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateTapped:" destination="tms-Ng-ilR" eventType="touchUpInside" id="ipQ-o1-L52"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wwC-eO-Xdx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bb4-k7-QZ4" firstAttribute="centerX" secondItem="5K7-al-rMz" secondAttribute="centerX" id="10u-Fy-cAq"/>
+                            <constraint firstItem="W0E-ne-Qa9" firstAttribute="top" secondItem="Bb4-k7-QZ4" secondAttribute="bottom" constant="30" id="ALt-NZ-21K"/>
+                            <constraint firstItem="rgg-dr-k9V" firstAttribute="leading" secondItem="5K7-al-rMz" secondAttribute="leading" id="HgP-JX-Aa4"/>
+                            <constraint firstItem="W0E-ne-Qa9" firstAttribute="leading" secondItem="5K7-al-rMz" secondAttribute="leadingMargin" id="MtG-Rc-fod"/>
+                            <constraint firstAttribute="trailing" secondItem="rgg-dr-k9V" secondAttribute="trailing" id="NIm-km-8rF"/>
+                            <constraint firstItem="nUn-PQ-HkX" firstAttribute="centerX" secondItem="5K7-al-rMz" secondAttribute="centerX" id="T9a-ni-2Cx"/>
+                            <constraint firstItem="50e-Ms-b1o" firstAttribute="top" secondItem="rgg-dr-k9V" secondAttribute="bottom" id="o9Z-0T-cxQ"/>
+                            <constraint firstItem="W0E-ne-Qa9" firstAttribute="trailing" secondItem="5K7-al-rMz" secondAttribute="trailingMargin" id="psv-D2-8ta"/>
+                            <constraint firstItem="nUn-PQ-HkX" firstAttribute="width" secondItem="5K7-al-rMz" secondAttribute="width" multiplier="0.25" id="rVA-tq-Hyd"/>
+                            <constraint firstItem="nUn-PQ-HkX" firstAttribute="top" secondItem="euS-7t-Nm5" secondAttribute="bottom" constant="30" id="v52-3o-LQt"/>
+                            <constraint firstItem="Bb4-k7-QZ4" firstAttribute="top" secondItem="nUn-PQ-HkX" secondAttribute="bottom" constant="54" id="vUg-7c-fet"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="skipButton" destination="rQv-Iu-4SD" id="sU1-po-2Mo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3w-LX-yRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="103.89805097451276"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubbleLogo_180x180" width="90" height="90"/>
+    </resources>
+</document>

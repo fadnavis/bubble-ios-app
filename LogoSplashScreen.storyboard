@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J3a-b8-0Wc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="8ot-bM-wuk">
+            <objects>
+                <viewController title="Splash View Controller" id="J3a-b8-0Wc" customClass="LogoSpashViewController" customModule="Bubble" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J1B-Mc-ysj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ptz-cd-ZP3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c2x-Gy-wRA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="A5V-PN-7ZW"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A5V-PN-7ZW" firstAttribute="leading" secondItem="c2x-Gy-wRA" secondAttribute="leading" id="8Y7-wp-n1x"/>
+                            <constraint firstAttribute="trailing" secondItem="A5V-PN-7ZW" secondAttribute="trailing" id="AOF-rA-87i"/>
+                            <constraint firstItem="Ptz-cd-ZP3" firstAttribute="top" secondItem="A5V-PN-7ZW" secondAttribute="bottom" id="Tmc-nO-Xjx"/>
+                            <constraint firstItem="A5V-PN-7ZW" firstAttribute="top" secondItem="c2x-Gy-wRA" secondAttribute="top" id="vgp-Xy-rvq"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKJ-fr-5Vi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="241"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="540" height="960"/>
+    </resources>
+</document>

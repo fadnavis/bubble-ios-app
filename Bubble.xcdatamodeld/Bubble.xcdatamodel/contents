@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ChannelData" representedClassName=".Channels" syncable="YES">
+        <attribute name="channelCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HDMap" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hdRow" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="primaryKey" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sdRow" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="ProgramsLater" representedClassName=".Programs" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hdKey" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imdbRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playingStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryKey" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="programId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="programName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ProgramsNext" representedClassName=".Programs" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hdKey" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imdbRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playingStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryKey" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="programId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="programName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ProgramsNow" representedClassName=".Programs" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hdKey" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imdbRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playingStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryKey" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="programId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="programName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="STBCodes" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bits" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frequency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hexcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="protocol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rawcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rawlength" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remoteNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ChannelData" positionX="-45" positionY="135" width="128" height="105"/>
+        <element name="HDMap" positionX="-63" positionY="72" width="128" height="105"/>
+        <element name="ProgramsLater" positionX="-36" positionY="90" width="128" height="240"/>
+        <element name="ProgramsNext" positionX="-54" positionY="81" width="128" height="240"/>
+        <element name="ProgramsNow" positionX="-63" positionY="-18" width="128" height="240"/>
+        <element name="STBCodes" positionX="-63" positionY="63" width="128" height="180"/>
+    </elements>
+</model>
